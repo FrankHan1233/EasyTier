@@ -12,8 +12,6 @@ use uuid::Uuid;
 static INSTANCE_MANAGER: once_cell::sync::Lazy<NetworkInstanceManager> =
     once_cell::sync::Lazy::new(NetworkInstanceManager::new);
 
-
-
 #[napi(object)]
 pub struct KeyValuePair {
     pub key: String,
